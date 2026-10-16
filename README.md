@@ -10,9 +10,7 @@ Premium, fully responsive static website. No build step. Inspired by Equity Grou
 Upload contents to any static host (cPanel, Netlify, Vercel, S3). Replace `https://www.denshaj.co.ke/` in sitemap.xml + canonical tags with the real production domain when known. Do not hardcode a fictitious domain elsewhere (only placeholders in SEO tags).
 
 ## Forms
-Frontend validation only. On submit, the form builds a `mailto:denshaj@gmail.com` draft — honest, no fake success.
-To activate automatic delivery, connect Formspree/Getform/Netlify Forms or a backend endpoint:
-1. Create endpoint, 2. add `fetch()` POST in `js/main.js` in the `data-enquiry` handler, 3. show real success only on HTTP 200.
+Direct to team: on submit, the form validates and opens the visitor's email app addressed to `mailto:denshajenterprise@gmail.com` with the enquiry pre-filled — we reply within 48 hours.
 
 ## Traceability (PDF → website)
 | PDF § | Content | Website destination |
@@ -28,7 +26,7 @@ To activate automatic delivery, connect Formspree/Getform/Netlify Forms or a bac
 | 09 Compliance | NCA cert 95544/B/0925 to 31Jul2028; licence SN-643550 to 31Jul2026; AGPO PVT-EYU38LZQ; KRA PIN P052349465S; KEBS/KRA/NEMA/KABCEC/OSHA; company details | compliance.html + assets/docs/ |
 | 10 Management & Team | Dennis +254702735769, Johnson +254707135624, Korir JKUAT, Allan BORAQS/JKUAT, Priscilla UoN, workforce | team.html |
 | 11 Sustainability | 10% profit trees, dust cannons, recycled water, 30% spend, 60% foremen | sustainability.html |
-| 12 Contact | phones, denshaj@gmail.com, Off Uganda Rd Oloo St, Box 456-30100 Eldoret | contact.html, footer |
+| 12 Contact | phones, denshajenterprise@gmail.com, Off Uganda Rd Oloo St, Box 456-30100 Eldoret | contact.html, footer |
 | TCC file | KRAELD1581213826 16Oct2026–15Oct2027 | compliance.html + assets/docs/Tax-Compliance-Certificate.pdf |
 
 Images: all 10 unique supplied JPEGs used with correct alt text; 3 duplicates excluded. No stock images.
@@ -38,4 +36,4 @@ Images: all 10 unique supplied JPEGs used with correct alt text; 3 duplicates ex
 2. AGPO cert (30Aug2024–30Aug2026) expired at build date 16Oct2026 — renewal needed.
 3. Older KRA cert in profile superseded by 16Oct2026 TCC file — current file used.
 4. No logo file supplied — text monogram used; replace when logo available.
-5. No social URLs, no production domain, no backend endpoint — placeholders documented, nothing faked.
+5. No social URLs, no production domain — placeholders documented, nothing faked. Office pin: Eldoret town, Off Uganda Rd Oloo St.

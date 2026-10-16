@@ -2,7 +2,7 @@
 
 ## Content verification (PDF vs website)
 - Full profile PDF (19 content pages) read page-by-page; all sections mapped in README traceability table.
-- Contact details verified: +254702735769, +254707135624, denshaj@gmail.com, Off Uganda Road Oloo St, Box 456-30100 Eldoret.
+- Contact details verified: +254702735769, +254707135624, denshajenterprise@gmail.com, Off Uganda Road Oloo St, Box 456-30100 Eldoret.
 - No invented services, clients, values, dates, testimonials. MEP scope limited to toilets + rooftop tanks as documented.
 - Images: 10 unique supplied JPEGs used, 1 duplicate trio deduped. Alt text descriptive. No stock.
 - Discrepancies resolved 16Oct2026: NCA 5 confirmed (used site-wide); AGPO expired 30Aug2026; old KRA cert superseded by 16Oct2026 TCC file.
@@ -12,7 +12,7 @@
 - ALL-IMG-HAVE-ALT-OK.
 - All 14 HTML pages + CSS/JS + sitemap + robots present.
 - Nav, dropdowns, mobile hamburger, filters (projects), lightbox, cookie bar, back-to-top, enquiry validation implemented in js/main.js.
-- Forms: honest mailto-draft fallback, no fake success. Backend endpoint still required (see README).
+- Forms: direct-to-team mailto draft to denshajenterprise@gmail.com with 48h reply promise. No fake success.
 - tel: / mailto: / WhatsApp wa.me/254702735769 links use verified numbers only.
 - PDFs linked: Denshaj-Enterprise-Profile-2026.pdf, Tax-Compliance-Certificate.pdf.
 
@@ -23,4 +23,4 @@
 - Manual browser check recommended: `npx serve .` then open localhost; test 390px, 768px, 1280px; check console for 404s.
 
 ## Remaining limitations
-1. Confirm NCA category (5 vs 7). 2. Renew AGPO. 3. Supply logo to replace monogram. 4. Provide production domain to replace www.denshaj.co.ke placeholder. 5. Connect form backend. 6. Privacy draft needs legal review.
+1. NCA 5 confirmed. 2. Renew AGPO. 3. Supply logo to replace monogram. 4. Provide production domain to replace www.denshaj.co.ke placeholder. 5. Privacy draft needs legal review. Office pin: Eldoret town.

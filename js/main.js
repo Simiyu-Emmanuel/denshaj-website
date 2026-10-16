@@ -34,7 +34,7 @@
   // reveal on scroll (subtle)
   const io=('IntersectionObserver' in window)?new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.style.opacity='1';en.target.style.transform='none';io.unobserve(en.target);}}),{threshold:.12}):null;
   $$('[data-reveal]').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(14px)';el.style.transition='opacity .5s ease,transform .5s ease';if(io)io.observe(el);else{el.style.opacity='1';el.style.transform='none';}});
-  // forms: front-end validation + honest backend notice
+  // forms: front-end validation + direct email draft to Denshaj team
   $$('form[data-enquiry]').forEach(f=>{
     f.addEventListener('submit',(e)=>{
       e.preventDefault();
@@ -46,11 +46,11 @@
       const box=$('#formMsg',f)||document.createElement('div');
       box.id='formMsg';box.setAttribute('role','status');
       if(errs.length){box.className='error';box.innerHTML=errs.map(x=>'<div>'+x.replace(/</g,'&lt;')+'</div>').join('');f.appendChild(box);return;}
-      // No backend configured: construct mailto draft honestly (no fake success)
+      // Direct to team: build enquiry email addressed to Denshaj
       const subject=encodeURIComponent('Project enquiry from website: '+(fd.get('name')||''));
-      const body=encodeURIComponent('Name: '+fd.get('name')+'\nPhone: '+fd.get('phone')+'\nEmail: '+email+'\nService: '+(fd.get('service')||'-')+'\n\nMessage:\n'+fd.get('message')+'\n\n— Sent from denshaj website enquiry form (opens email app; backend not yet connected).');
+      const body=encodeURIComponent('Name: '+fd.get('name')+'\nPhone: '+fd.get('phone')+'\nEmail: '+email+'\nService: '+(fd.get('service')||'-')+'\n\nMessage:\n'+fd.get('message')+'\n\n— Sent from Denshaj website enquiry form.');
       box.className='success';
-      box.innerHTML='Thanks — your details are ready. No automatic backend delivery is configured yet, so click <a href="mailto:denshaj@gmail.com?subject='+subject+'&body='+body+'">Send via your email app to denshaj@gmail.com</a> or call <a href="tel:+254702735769">+254 702 735 769</a>. To activate automatic delivery, connect a form endpoint (see README).';
+      box.innerHTML='Thanks — your enquiry is ready. Click <a href="mailto:denshajenterprise@gmail.com?subject='+subject+'&body='+body+'">Send via your email app to denshajenterprise@gmail.com</a> or call <a href="tel:+254702735769">+254 702 735 769</a> — we reply with a quotation within 48 hours.';
       f.appendChild(box);
     });
   });
@@ -78,7 +78,7 @@
       if(/project|pipeline|portfolio|stall/.test(q))return 'Signature build: <strong>Pipeline Onestop Shop — 36 retail stalls</strong>, gated entrance, cabro walkway, toilets + rooftop tanks. <a href="project-pipeline.html">View detail →</a>';
       if(/material|supply|ballast|sand|murram|cement|steel|concrete/.test(q))return 'Daily capacity: <strong>1,200t ballast · 900t sand · 800t murram · 480m³ ready-mix · 2,000 cement bags · 150t steel</strong>. Same-day Nairobi metro, 24-hr up-country. <a href="supply.html">Supply →</a>';
       if(/fleet|equipment|tipper|excavator|plant/.test(q))return 'Own fleet: <strong>18 tippers · 6 mixers · batching plant 60m³/hr · 3 excavators · rollers · grader</strong>, GPS-tracked. <a href="fleet.html">Fleet →</a>';
-      if(/contact|phone|email|location|address|where/.test(q))return 'We are in <strong>Eldoret — Off Uganda Rd, Oloo St</strong>. Call <a href="tel:+254702735769">+254 702 735 769</a> / <a href="tel:+254707135624">+254 707 135 624</a> or <a href="mailto:denshaj@gmail.com">denshaj@gmail.com</a>. <a href="'+WA+'" target="_blank" rel="noopener">WhatsApp us →</a>';
+      if(/contact|phone|email|location|address|where/.test(q))return 'We are in <strong>Eldoret — Off Uganda Rd, Oloo St</strong>. Call <a href="tel:+254702735769">+254 702 735 769</a> / <a href="tel:+254707135624">+254 707 135 624</a> or <a href="mailto:denshajenterprise@gmail.com">denshajenterprise@gmail.com</a>. <a href="'+WA+'" target="_blank" rel="noopener">WhatsApp us →</a>';
       if(/hello|hi|hey|jambo|habari/.test(q))return 'Jambo! Welcome to <strong>Denshaj — Tested · Trusted · For Better</strong>. Ask me about services, projects, supply or getting a 48-hour quote.';
       if(/who|about|company|denshaj/.test(q))return '<strong>Denshaj Enterprise Ltd</strong> is 100% Kenyan-owned, founded 2024 — building construction, civil engineering & materials supply under one accountable partner. <a href="about.html">About us →</a>';
       return 'I can help with <strong>services, projects, materials, fleet or quotes</strong>. For a fast human reply, <a href="'+WA+'" target="_blank" rel="noopener">chat on WhatsApp →</a> or call <a href="tel:+254702735769">+254 702 735 769</a>.';
