@@ -5,7 +5,7 @@
 - Contact details verified: +254702735769, +254707135624, denshaj@gmail.com, Off Uganda Road Oloo St, Box 456-30100 Eldoret.
 - No invented services, clients, values, dates, testimonials. MEP scope limited to toilets + rooftop tanks as documented.
 - Images: 10 unique supplied JPEGs used, 1 duplicate trio deduped. Alt text descriptive. No stock.
-- Discrepancies flagged honestly: NCA 5 (cover) vs NCA 7 (compliance table — used); AGPO expired 30Aug2026; old KRA cert superseded by 16Oct2026 TCC file.
+- Discrepancies resolved 16Oct2026: NCA 5 confirmed (used site-wide); AGPO expired 30Aug2026; old KRA cert superseded by 16Oct2026 TCC file.
 
 ## Functional verification
 - NO-BAD-HREFS-OK: zero `href="#"` (lightbox anchors now point to real image files).

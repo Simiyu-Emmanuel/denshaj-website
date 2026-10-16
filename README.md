@@ -34,7 +34,7 @@ To activate automatic delivery, connect Formspree/Getform/Netlify Forms or a bac
 Images: all 10 unique supplied JPEGs used with correct alt text; 3 duplicates excluded. No stock images.
 
 ## Known issues / needs client confirmation
-1. NCA category: cover says NCA 5, compliance table says NCA 7 — table used; confirm correct.
+1. NCA category confirmed as NCA 5 (16Oct2026) — used across site.
 2. AGPO cert (30Aug2024–30Aug2026) expired at build date 16Oct2026 — renewal needed.
 3. Older KRA cert in profile superseded by 16Oct2026 TCC file — current file used.
 4. No logo file supplied — text monogram used; replace when logo available.
